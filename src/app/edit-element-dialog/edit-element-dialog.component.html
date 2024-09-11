@@ -1,0 +1,44 @@
+<h1 mat-dialog-title>Edit Element</h1>
+<div
+  mat-dialog-content
+  style="margin: 0 30px; display: flex; flex-direction: column; gap: 20px"
+>
+  <mat-form-field style="width: 100%">
+    <mat-label>Name</mat-label>
+    <input matInput [(ngModel)]="data.name" />
+  </mat-form-field>
+  <mat-form-field style="width: 100%">
+    <mat-label>Weight</mat-label>
+    <input matInput type="number" [(ngModel)]="data.weight" />
+  </mat-form-field>
+  <mat-form-field style="width: 100%">
+    <mat-label>Symbol</mat-label>
+    <input matInput [(ngModel)]="data.symbol" />
+  </mat-form-field>
+</div>
+<div
+  mat-dialog-actions
+  style="
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding-right: 10px;
+  "
+>
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="onSave()"
+    style="background-color: #1976d2; color: white"
+  >
+    Save
+  </button>
+  <button
+    mat-raised-button
+    (click)="onNoClick()"
+    style="background-color: #e0e0e0; color: black"
+  >
+    Cancel
+  </button>
+</div>
