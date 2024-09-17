@@ -9,7 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
-import { PeriodicElement } from '../periodic-table/periodic-table.component';
+import { PeriodicElement } from '../services/periodic-table-state.service';
 
 @Component({
   selector: 'app-edit-element-dialog',
